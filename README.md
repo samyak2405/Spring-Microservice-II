@@ -32,6 +32,11 @@
 ## Microservice Architecture Built in this project
 ![](./images/Architecture.jpg)
 
+## Microservice
+1. Service Registry
+   - Service Registry using Eureka server
+   - Order, Product and Payment will be Eureka client
+2. 
 ## Questions/Doubts
 1. How spring works internally?
 2. How springboot application runs?
@@ -39,4 +44,3 @@
 4. What are embedded server?
 5. what is Springboot Actuator?
 6. What is Springboot devtools?
-7. 
