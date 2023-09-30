@@ -154,6 +154,29 @@ management:
 
 - API Gateways are particularly valuable in microservices architectures, where numerous small services may be interacting with each other. They serve as a single entry point for client applications, simplifying the client-side experience and providing a layer of abstraction that can shield clients from the complexity of the underlying microservices network. Popular API Gateway solutions include NGINX, Amazon API Gateway, Apigee, and Kong, among others
 
+## Circuit Breaker
+- A circuit breaker is a software design pattern used in distributed systems and microservices architectures to enhance the stability and resilience of applications. It is inspired by the electrical circuit breaker, which stops the flow of electricity when there's a fault to prevent damage. In software, the circuit breaker serves a similar purpose, helping to manage and handle failures gracefully when interacting with remote services or components.
+
+**The circuit breaker pattern consists of three primary states:**
+
+- Closed State: In the closed state, the circuit breaker allows requests to pass through to the underlying service. It monitors the responses for errors or failures. If the error rate or failure rate remains below a certain threshold during a specified time period, the circuit breaker remains closed, indicating that the service is healthy.
+
+- Open State: When the circuit breaker detects that the error rate or failure rate exceeds the defined threshold, it transitions to the open state. In this state, the circuit breaker prevents requests from reaching the underlying service. Instead, it immediately returns an error or fallback response to the caller. This helps to protect the service from further stress or overload when it's experiencing problems.
+
+- Half-Open State: After a predefined period of time, the circuit breaker transitions from the open state to the half-open state. In this state, the circuit breaker allows a limited number of test requests to pass through to the underlying service. If these test requests succeed without errors, the circuit breaker transitions back to the closed state, indicating that the service has recovered. If any test requests fail, the circuit breaker remains open, allowing for additional testing in the future.
+
+**Benefits of using the circuit breaker pattern:**
+
+- Fault Tolerance: Circuit breakers help prevent cascading failures in distributed systems by isolating and protecting the healthy components from malfunctioning ones.
+
+- Improved User Experience: Users receive quicker responses when a circuit breaker is open, which is typically better than waiting for requests to time out or fail.
+
+- Efficient Resource Usage: It reduces unnecessary load on failing services and avoids resource exhaustion.
+
+- Visibility and Monitoring: Circuit breakers often provide metrics and monitoring information, making it easier to detect and diagnose service issues.
+
+- Popular libraries and frameworks, such as Netflix Hystrix (now in maintenance mode) and Resilience4j, offer implementations of the circuit breaker pattern in Java applications. These libraries provide a way to easily configure and use circuit breakers to handle failures in microservices architectures and other distributed systems.
+
 ## Questions/Doubts
 1. How spring works internally?
 2. How springboot application runs?

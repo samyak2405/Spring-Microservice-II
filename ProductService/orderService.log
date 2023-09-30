@@ -9026,3 +9026,70 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2023-09-30T17:22:08.923+05:30  INFO 20360 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-30T17:34:23.386+05:30  INFO 1854 --- [restartedMain] c.samyak.order.OrderServiceApplication   : Starting OrderServiceApplication using Java 17.0.7 with PID 1854 (/home/samyak/Desktop/JAVA/Spring_Microservices/OrderService/target/classes started by samyak in /home/samyak/Desktop/JAVA/Spring_Microservices/ProductService)
+2023-09-30T17:34:23.390+05:30  INFO 1854 --- [restartedMain] c.samyak.order.OrderServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-09-30T17:34:23.540+05:30  INFO 1854 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9296
+2023-09-30T17:34:23.541+05:30  INFO 1854 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=144eb99ad93697be5df18e65f7a28370c4d333e0, state=null
+2023-09-30T17:34:23.544+05:30  INFO 1854 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-30T17:34:23.545+05:30  INFO 1854 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-30T17:34:25.699+05:30  INFO 1854 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-30T17:34:25.991+05:30  INFO 1854 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 272 ms. Found 1 JPA repository interfaces.
+2023-09-30T17:34:27.438+05:30  INFO 1854 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7b7b2bf4-6805-352b-9383-65b9fd32dca2
+2023-09-30T17:34:27.697+05:30  INFO 1854 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.samyak.external.client.PaymentService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-30T17:34:27.702+05:30  INFO 1854 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.samyak.external.client.ProductService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-30T17:34:27.958+05:30 ERROR 1854 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2023-09-30T17:34:28.997+05:30  INFO 1854 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-30T17:34:29.016+05:30  INFO 1854 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-30T17:34:29.017+05:30  INFO 1854 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-30T17:34:29.150+05:30  INFO 1854 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-30T17:34:29.151+05:30  INFO 1854 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5605 ms
+2023-09-30T17:34:30.425+05:30  INFO 1854 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-30T17:34:30.695+05:30  INFO 1854 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-30T17:34:30.700+05:30  INFO 1854 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-30T17:34:31.052+05:30  INFO 1854 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-30T17:34:31.415+05:30  INFO 1854 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-30T17:34:31.457+05:30  INFO 1854 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-30T17:34:32.350+05:30  INFO 1854 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a26bb66
+2023-09-30T17:34:32.353+05:30  INFO 1854 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-30T17:34:32.578+05:30  WARN 1854 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-30T17:34:33.055+05:30  INFO 1854 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-30T17:34:34.468+05:30  INFO 1854 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-30T17:34:34.807+05:30  INFO 1854 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-30T17:34:35.691+05:30  WARN 1854 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-30T17:34:35.761+05:30  INFO 1854 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-30T17:34:35.820+05:30  INFO 1854 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'PRODUCT-SERVICE/api/product' URL not provided. Will try picking an instance via load-balancing.
+2023-09-30T17:34:35.967+05:30  INFO 1854 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'PAYMENT-SERVICE/api/payment' URL not provided. Will try picking an instance via load-balancing.
+2023-09-30T17:34:37.349+05:30  INFO 1854 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-30T17:34:37.426+05:30  WARN 1854 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-09-30T17:34:37.454+05:30  INFO 1854 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-30T17:34:37.618+05:30  INFO 1854 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-30T17:34:37.791+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-30T17:34:37.801+05:30  INFO 1854 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-30T17:34:37.853+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-30T17:34:37.854+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-30T17:34:37.854+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-30T17:34:37.855+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-30T17:34:37.855+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-30T17:34:37.855+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-30T17:34:37.856+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-30T17:34:38.142+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-30T17:34:38.147+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-30T17:34:38.154+05:30  INFO 1854 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-30T17:34:38.166+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696075478165 with initial instances count: 2
+2023-09-30T17:34:38.204+05:30  INFO 1854 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2023-09-30T17:34:38.205+05:30  INFO 1854 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696075478205, current=UP, previous=STARTING]
+2023-09-30T17:34:38.209+05:30  INFO 1854 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/172.17.0.1:ORDER-SERVICE:8081: registering service...
+2023-09-30T17:34:38.281+05:30  INFO 1854 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-30T17:34:38.283+05:30  INFO 1854 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2023-09-30T17:34:38.320+05:30  INFO 1854 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/172.17.0.1:ORDER-SERVICE:8081 - registration status: 204
+2023-09-30T17:34:38.375+05:30  INFO 1854 --- [restartedMain] c.samyak.order.OrderServiceApplication   : Started OrderServiceApplication in 18.737 seconds (process running for 20.492)
+2023-09-30T17:36:51.447+05:30  INFO 1854 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-30T17:36:51.463+05:30  INFO 1854 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-30T17:36:51.468+05:30  INFO 1854 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-09-30T17:36:51.640+05:30  INFO 1854 --- [http-nio-8081-exec-1] com.samyak.service.OrderServiceImpl      : Get order details for orderId: 102
+2023-09-30T17:36:51.908+05:30  INFO 1854 --- [http-nio-8081-exec-1] com.samyak.service.OrderServiceImpl      : Invoking Product service to fetch product details using RestTemplate
+2023-09-30T17:36:52.629+05:30  INFO 1854 --- [http-nio-8081-exec-1] com.samyak.service.OrderServiceImpl      : Getting payment information from the payment service
+2023-09-30T17:37:04.534+05:30  INFO 1854 --- [http-nio-8081-exec-2] com.samyak.service.OrderServiceImpl      : Get order details for orderId: 102
+2023-09-30T17:37:04.544+05:30  INFO 1854 --- [http-nio-8081-exec-2] com.samyak.service.OrderServiceImpl      : Invoking Product service to fetch product details using RestTemplate
+2023-09-30T17:37:04.568+05:30  INFO 1854 --- [http-nio-8081-exec-2] com.samyak.service.OrderServiceImpl      : Getting payment information from the payment service
+2023-09-30T17:39:37.861+05:30  INFO 1854 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

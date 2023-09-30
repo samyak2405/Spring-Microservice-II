@@ -3420,3 +3420,67 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2023-09-30T17:22:09.473+05:30  INFO 20082 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-09-30T17:35:44.553+05:30  INFO 2627 --- [restartedMain] c.s.product.ProductServiceApplication    : Starting ProductServiceApplication using Java 17.0.7 with PID 2627 (/home/samyak/Desktop/JAVA/Spring_Microservices/ProductService/target/classes started by samyak in /home/samyak/Desktop/JAVA/Spring_Microservices/ProductService)
+2023-09-30T17:35:44.607+05:30  INFO 2627 --- [restartedMain] c.s.product.ProductServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-09-30T17:35:44.779+05:30  INFO 2627 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9296
+2023-09-30T17:35:44.780+05:30  INFO 2627 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=PRODUCT-SERVICE, profiles=[default], label=null, version=144eb99ad93697be5df18e65f7a28370c4d333e0, state=null
+2023-09-30T17:35:44.784+05:30  INFO 2627 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-30T17:35:44.785+05:30  INFO 2627 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-30T17:35:46.292+05:30  INFO 2627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-30T17:35:46.553+05:30  INFO 2627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 241 ms. Found 1 JPA repository interfaces.
+2023-09-30T17:35:47.766+05:30  INFO 2627 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4c89b98f-aff2-3b1a-8a85-89e340b09d01
+2023-09-30T17:35:48.189+05:30 ERROR 2627 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2023-09-30T17:35:49.473+05:30  INFO 2627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-30T17:35:49.495+05:30  INFO 2627 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-30T17:35:49.496+05:30  INFO 2627 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-30T17:35:49.636+05:30  INFO 2627 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-30T17:35:49.638+05:30  INFO 2627 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4851 ms
+2023-09-30T17:35:50.786+05:30  INFO 2627 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-30T17:35:50.864+05:30  INFO 2627 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-30T17:35:50.869+05:30  INFO 2627 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-30T17:35:51.081+05:30  INFO 2627 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-30T17:35:51.272+05:30  INFO 2627 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-30T17:35:51.307+05:30  INFO 2627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-30T17:35:51.614+05:30  INFO 2627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@601f8fe8
+2023-09-30T17:35:51.617+05:30  INFO 2627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-30T17:35:51.918+05:30  WARN 2627 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-30T17:35:52.213+05:30  INFO 2627 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-30T17:35:53.245+05:30  INFO 2627 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-30T17:35:53.422+05:30  INFO 2627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-30T17:35:54.142+05:30  WARN 2627 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-30T17:35:55.442+05:30  WARN 2627 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-09-30T17:35:55.482+05:30  INFO 2627 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-30T17:35:55.573+05:30  WARN 2627 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-09-30T17:35:55.590+05:30  INFO 2627 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-30T17:35:55.743+05:30  INFO 2627 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-30T17:35:55.879+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-30T17:35:55.887+05:30  INFO 2627 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-30T17:35:55.923+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-30T17:35:55.923+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-30T17:35:55.923+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-30T17:35:55.924+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-30T17:35:55.924+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-30T17:35:55.924+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-30T17:35:55.924+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-30T17:35:56.169+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-30T17:35:56.175+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-30T17:35:56.180+05:30  INFO 2627 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-30T17:35:56.187+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696075556187 with initial instances count: 4
+2023-09-30T17:35:56.193+05:30  INFO 2627 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2023-09-30T17:35:56.194+05:30  INFO 2627 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696075556194, current=UP, previous=STARTING]
+2023-09-30T17:35:56.199+05:30  INFO 2627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/172.17.0.1:PRODUCT-SERVICE:8080: registering service...
+2023-09-30T17:35:56.233+05:30  INFO 2627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-30T17:35:56.235+05:30  INFO 2627 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2023-09-30T17:35:56.289+05:30  INFO 2627 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/172.17.0.1:PRODUCT-SERVICE:8080 - registration status: 204
+2023-09-30T17:35:56.301+05:30  INFO 2627 --- [restartedMain] c.s.product.ProductServiceApplication    : Started ProductServiceApplication in 15.234 seconds (process running for 16.924)
+2023-09-30T17:36:36.890+05:30  INFO 2627 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-30T17:36:36.903+05:30  INFO 2627 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-30T17:36:36.913+05:30  INFO 2627 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-09-30T17:36:37.033+05:30  INFO 2627 --- [http-nio-8080-exec-1] c.samyak.controller.ProductController    : <<<<<<<<<<<<<<<Inside get all Product API>>>>>>>>>>>>>>>>>
+2023-09-30T17:36:37.034+05:30  INFO 2627 --- [http-nio-8080-exec-1] com.samyak.service.ProductServiceImpl    : <<<<<<<<<<<Inside get all Products service>>>>>>>>>>>>>>
+2023-09-30T17:36:52.379+05:30  INFO 2627 --- [http-nio-8080-exec-2] c.samyak.controller.ProductController    : <<<<<<<<<<<<<Inside get by Id API>>>>>>>>>>>>>>>>
+2023-09-30T17:36:52.380+05:30  INFO 2627 --- [http-nio-8080-exec-2] com.samyak.service.ProductServiceImpl    : <<<<<<<<<<<<Inside find by Id service>>>>>>>>>>>>>>>>.
+2023-09-30T17:36:52.438+05:30  INFO 2627 --- [http-nio-8080-exec-2] com.samyak.service.ProductServiceImpl    : <<<<<<<<<<<<<<<Product found successfully>>>>>>>>>>>>>>
+2023-09-30T17:37:04.556+05:30  INFO 2627 --- [http-nio-8080-exec-4] c.samyak.controller.ProductController    : <<<<<<<<<<<<<Inside get by Id API>>>>>>>>>>>>>>>>
+2023-09-30T17:37:04.556+05:30  INFO 2627 --- [http-nio-8080-exec-4] com.samyak.service.ProductServiceImpl    : <<<<<<<<<<<<Inside find by Id service>>>>>>>>>>>>>>>>.
+2023-09-30T17:37:04.563+05:30  INFO 2627 --- [http-nio-8080-exec-4] com.samyak.service.ProductServiceImpl    : <<<<<<<<<<<<<<<Product found successfully>>>>>>>>>>>>>>
