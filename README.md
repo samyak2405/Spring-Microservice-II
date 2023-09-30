@@ -12,6 +12,9 @@
 9. Zipkin and Sleuth to enable distributed tracing in microservices architectures and to track and diagnose performance issues by providing visibility into request flow and dependencies.
 10. How to call API of one microservice from another microservice using RestTemplate
 11. Implemented API Gateway
+12. Implement Circuit Breaker (Not working properly)
+13. Implemented Rate Limiter (Not working properly)
+14. 
 
 ## How Spring works internally?
 1. When we create a Springboot project, it has the spring factories added to the META-INF folder and all the configuration, all the jar files required are mentioned there. Whenever you add any properties or any configuration and it matches with the spring factories, it tries to add that configuration to it.
@@ -176,6 +179,8 @@ management:
 - Visibility and Monitoring: Circuit breakers often provide metrics and monitoring information, making it easier to detect and diagnose service issues.
 
 - Popular libraries and frameworks, such as Netflix Hystrix (now in maintenance mode) and Resilience4j, offer implementations of the circuit breaker pattern in Java applications. These libraries provide a way to easily configure and use circuit breakers to handle failures in microservices architectures and other distributed systems.
+
+## 
 
 ## Questions/Doubts
 1. How spring works internally?
