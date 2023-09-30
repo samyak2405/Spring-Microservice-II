@@ -1,4 +1,4 @@
-package com.samyak.external;
+package com.samyak.external.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Configuration;

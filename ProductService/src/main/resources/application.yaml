@@ -24,3 +24,7 @@ server:
 logging:
   file:
     name: productService.log
+management:
+  tracing:
+    sampling:
+      probability: 1.0
