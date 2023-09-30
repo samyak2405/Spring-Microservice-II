@@ -82,6 +82,7 @@ public class OrderServiceImpl implements OrderService{
                         "NOT_FOUND",
                         404));
 
+        //Rest Template
         log.info("Invoking Product service to fetch product details using RestTemplate");
         ProductResponse productResponse =
                 restTemplate.getForObject(
