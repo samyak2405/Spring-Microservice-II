@@ -1,5 +1,14 @@
 # Spring-Microservice-II
 
+## Key Learnings so far
+1. How springboot works?
+2. What are embedded servers?
+3. What is spring actuator?
+4. Service registry using Eureka server
+5. Exception handling in spring
+6. How to handle repetitive configurations using spring config server
+7. How to call API of one microservice from another microservice using Feign Client
+
 ## How Spring works internally?
 1. When we create a Springboot project, it has the spring factories added to the META-INF folder and all the configuration, all the jar files required are mentioned there. Whenever you add any properties or any configuration and it matches with the spring factories, it tries to add that configuration to it.
 2. Based on the different dependency that you add the different configuration takes place inside.
